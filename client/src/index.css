@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#0b141a] text-[#e9edef] antialiased font-sans selection:bg-[#00a884]/30 selection:text-[#00a884];
+    background-image: radial-gradient(circle at 50% 50%, rgba(0, 168, 132, 0.03) 0%, transparent 60%);
+  }
+}
+
+/* Custom WhatsApp Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #374045;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4a545a;
+}
+
+/* WhatsApp Theme Colors & Glass Panels */
+.whatsapp-bg {
+  background-color: #0b141a;
+}
+
+.whatsapp-sidebar {
+  background-color: #111b21;
+  border-right: 1px border #222d34;
+}
+
+.whatsapp-header {
+  background-color: #202c33;
+}
+
+.whatsapp-input-bar {
+  background-color: #202c33;
+}
+
+.whatsapp-bubble-own {
+  background-color: #005c4b;
+  color: #e9edef;
+  box-shadow: 0 1px 0.5px rgba(11, 20, 26, 0.13);
+}
+
+.whatsapp-bubble-other {
+  background-color: #202c33;
+  color: #e9edef;
+  box-shadow: 0 1px 0.5px rgba(11, 20, 26, 0.13);
+}
+
+.whatsapp-accent {
+  color: #00a884;
+}
+
+.whatsapp-bg-accent {
+  background-color: #00a884;
+}
+
+.whatsapp-tick-read {
+  color: #53bdeb;
+}
+
+.whatsapp-tick-sent {
+  color: #8696a0;
+}
+
+/* Background Chat Wallpaper Texture */
+.whatsapp-chat-wallpaper {
+  background-color: #0b141a;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Smooth Slide Animations */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 0.2s cubic-bezier(0.1, 1, 0.1, 1) forwards;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "distributed-chat-application",
+  "version": "1.0.0",
+  "description": "Distributed Web-Based Real-Time Chat Application",
+  "scripts": {
+    "install:all": "npm install --prefix server && npm install --prefix client",
+    "dev:server": "npm --prefix server run dev",
+    "dev:server-node-2": "PORT=5001 SERVER_ID=server-node-2 npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "build:server": "npm --prefix server run build",
+    "build:client": "npm --prefix client run build",
+    "build": "npm run build:server && npm run build:client"
+  }
+}

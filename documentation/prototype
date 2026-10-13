@@ -1,0 +1,220 @@
+For your **Distributed Web-Based Chat Application**, the prototype should demonstrate the complete user journey before development. Below is a concise prototype specification you can include in your project documentation.
+
+# Prototype
+
+## Prototype Overview
+
+The prototype represents the initial visual and functional design of the Distributed Web-Based Chat Application. It illustrates the application's layout, navigation, and user interactions without implementing the complete backend logic. The objective is to validate the user experience, interface design, and workflow before full-scale development.
+
+The prototype focuses on simplicity, usability, and responsive design while reflecting the final architecture of the application. It includes authentication, messaging, group communication, notifications, and profile management.
+
+---
+
+# Prototype Screens
+
+### 1. Splash Screen
+
+* Application logo
+* Loading animation
+* Redirect to Login or Dashboard
+
+---
+
+### 2. Login Screen
+
+* Email field
+* Password field
+* Remember Me option
+* Login button
+* Forgot Password link
+* Register button
+
+---
+
+### 3. Registration Screen
+
+* Full Name
+* Username
+* Email
+* Password
+* Confirm Password
+* Create Account button
+
+---
+
+### 4. Dashboard
+
+The dashboard serves as the central workspace.
+
+**Left Sidebar**
+
+* User Profile
+* Search Users
+* Private Chats
+* Group Chats
+* Notifications
+* Settings
+
+**Center Panel**
+
+* Recent conversations
+* Last message preview
+* Unread message badge
+* Online status
+
+---
+
+### 5. Chat Window
+
+**Header**
+
+* User avatar
+* Username
+* Online status
+* Voice Call (Future)
+* Video Call (Future)
+
+**Chat Area**
+
+* Sent messages
+* Received messages
+* Images
+* Files
+* Timestamps
+* Read receipts
+
+**Bottom Panel**
+
+* Message input
+* Emoji picker
+* Attachment button
+* Send button
+
+---
+
+### 6. Group Chat Screen
+
+* Group information
+* Member list
+* Group messages
+* Add member
+* Remove member (Admin)
+* Rename group
+* Leave group
+
+---
+
+### 7. Profile Screen
+
+* Profile picture
+* Name
+* Username
+* Email
+* About section
+* Change password
+* Save changes
+
+---
+
+### 8. Notification Screen
+
+* New messages
+* Group invitations
+* Mentions
+* System notifications
+* Mark all as read
+
+---
+
+### 9. Settings Screen
+
+* Dark/Light theme
+* Notification preferences
+* Privacy settings
+* Account security
+* Logout
+
+---
+
+### 10. Admin Dashboard
+
+* Total users
+* Active users
+* Online users
+* Total messages
+* Server health
+* Redis status
+* MongoDB status
+* User management
+
+---
+
+# Navigation Flow
+
+```text
+Splash Screen
+       │
+       ▼
+Login / Register
+       │
+       ▼
+Dashboard
+   ├── Private Chat
+   ├── Group Chat
+   ├── Search Users
+   ├── Notifications
+   ├── Profile
+   ├── Settings
+   └── Admin Dashboard (Admin Only)
+```
+
+---
+
+# Low-Fidelity Wireframe
+
+```text
++--------------------------------------------------+
+| Logo          Search               Profile        |
++------------+-------------------------------+-----+
+| Chats      |                               |     |
+| Groups     |       Chat Window             |Info |
+| Contacts   |                               |Pane |
+| Settings   |                               |     |
+|            |                               |     |
+|            |                               |     |
+|            |_______________________________|_____|
+| 😀  📎  Type a message...            Send ➤      |
++--------------------------------------------------+
+```
+
+---
+
+# High-Fidelity Prototype Features
+
+* Modern responsive interface
+* WhatsApp/Discord-inspired chat layout
+* Real-time message updates
+* Animated transitions
+* Light and Dark themes
+* Typing indicator
+* Online/offline status
+* Message reactions
+* File preview
+* Responsive design for desktop and mobile
+
+---
+
+# Prototype Tools
+
+* **Figma** – UI/UX design and interactive prototype
+* **Penpot** – Free open-source alternative
+* **React + Tailwind CSS** – Clickable frontend prototype
+* **Framer Motion** – Interface animations
+* **Lucide React** – Icons
+* **Google Fonts (Inter/Poppins)** – Typography
+
+---
+
+## Prototype Objective
+
+The prototype validates the application's user interface, navigation, and overall user experience before implementation. It allows stakeholders to review the design, identify usability issues, gather feedback, and refine workflows early, reducing development time and minimizing costly changes during implementation.
